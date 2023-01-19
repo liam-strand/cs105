@@ -1,0 +1,3 @@
+[submodule "hw01"]
+	path = hw01
+	url = git@github.com:liam-strand/cs105-hw01.git
