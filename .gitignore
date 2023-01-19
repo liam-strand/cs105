@@ -2,6 +2,7 @@
 build-prove-compare
 *.pdf
 .DS_Store
+bin
 
 # Prerequisites
 *.d
