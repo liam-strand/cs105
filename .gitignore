@@ -1,6 +1,7 @@
 #### USER
-
+build-prove-compare
 *.pdf
+.DS_Store
 
 # Prerequisites
 *.d
