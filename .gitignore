@@ -1,7 +1,7 @@
 #### USER
 build-prove-compare
 *.pdf
-.DS_Store
+**/.DS_Store
 bin
 
 # Prerequisites
