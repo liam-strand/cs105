@@ -71,7 +71,7 @@ That's the C++ version, the Impcore one would replace `LIT(true)` with `LIT(1)` 
 <exp> ::= <literal>
 \alt <variable-name>
 \alt "(if" <exp> <exp> <exp>")"
-\alt "("<function-name> <{exp}>")"
+\alt "("<function-name> \{<exp>\}")"
 
 \end{grammar}
 ```
@@ -94,10 +94,10 @@ Let's convert the concrete syntax above to an abstract syntax.
 \renewcommand{\syntright}{}
 \begin{grammar}
 
-<e> ::= <LITERAL(v)>
-\alt <VAR(x)>
-\alt <IF(e1, e2, e3)>
-\alt <APPLY(f, e, ..., en)>
+<e> ::= LITERAL(<v>)
+\alt VAR(<x>)
+\alt IF($e_1$, $e_2$, $e_3$)
+\alt APPLY(<f>, $e_1$, ..., $e_n$)
 
 \end{grammar}
 ```
