@@ -4,3 +4,6 @@
 [submodule "ramsey-code"]
 	path = ramsey-code
 	url = git@github.com:nrnrnr/build-prove-compare-student-code.git
+[submodule "hw02"]
+	path = hw02
+	url = git@github.com:liam-strand/cs105-hw02.git
