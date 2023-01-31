@@ -1,12 +1,13 @@
 ;; has-digit.imp
 ;; Liam Strand
-;; January 19, 2022
 
+;; January 19, 2022
 ;; (has-digit? n d) returns true (1) if n contains the digit d and 
 ;; false (0) otherwise
 ;; 
 ;; n >= 0
 ;; 0 <= d < 10
+
 ;;
 ;; Algebraic Laws:
 ;;      (all-fours? d' d)              == (= d' d)
