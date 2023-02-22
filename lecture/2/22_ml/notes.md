@@ -78,7 +78,14 @@ Syntax | Meaning
 Conditional branches must all evaluate to the same type.
 
 ```sml
-if 1 <> 2 then 2 else "hi";
+if 1 <> 2 then 3 else "hi"; 
+(* ! Toplevel input:                *
+ * ! if 1 <> 2 then 3 else "hi";    *
+ * !                       ^^^^     *
+ * ! Type clash: expression of type *
+ * !   string                       *
+ * ! cannot have type               *
+ * !   int                          *)
 ```
 
 is wrong because the types of the branches do not match.
@@ -89,24 +96,34 @@ is wrong because the types of the branches do not match.
 
 ```sml
 val x = 3;
+(* val x = 3 : int *)
 ```
 Without the `val`, it tries to do comparison
 ```sml
-x = 3
+x = 2
+(* val it = false : bool *)
 ```
 evaluates to false, not doing assignment.
 
 When we try to update a value, it creates a whole new binding. We say "variables are immutable".
 ```sml
 val y = x + 1;
+(* val y = 4 : int *)
 val x = 2;
+(* val x = 2 : int *)
 ```
 `y = 4`, even though `x` has changed
+
+```sml
+y
+(* val it = 4 : int *)
+```
 
 ## Local Variables with `let`
 
 ```sml
 let val x = 4 in x + 5 end;
+(* val it = 9 : int *)
 ```
 creates a new `x` that is local to this binding, and uses that `x` in the local expression and returns the result of that expression.
 
