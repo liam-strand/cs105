@@ -229,4 +229,8 @@ You could handle an `exception`:
 
 ## Unit Tests
 
-See the slides. The ML type system makes them...funky `:(`
+![](assets/units.png)
+
+_string-builder_ is a function that takes the output of _expr-to-test_ from some type `t` and turns it into a `string`. Norman needs this to produce the testing output.
+
+Norman gave us a bunch of builtin _string-builder_ options. Thanks bro. 
