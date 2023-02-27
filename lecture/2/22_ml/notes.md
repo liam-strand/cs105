@@ -176,7 +176,7 @@ Lists must be of a uniform type. The expected type is defined by the type of the
 [];
 (* val 'a it = [] : 'a list *)
 ```
-`[]` represents "any list"
+`'a list` is the "any list" type
 
 ### Cons
 
