@@ -3,7 +3,13 @@ ramsey-code
 *.pdf
 **/.DS_Store
 bin
+lib
 
+#### ML
+*.ui
+*.uo
+
+#### C
 # Prerequisites
 *.d
 

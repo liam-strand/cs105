@@ -198,5 +198,6 @@ fun id x = x;
 `'a` is a _type variable_. It means "any type". But, things with the same type variable need to have the same type:
 
 ```sml
-fun (f, x) = f x
+(fn apply (f, x) = f x);
+(* val ('a, 'b) it = fn : ('a -> 'b) * 'a -> 'b *)
 ```
