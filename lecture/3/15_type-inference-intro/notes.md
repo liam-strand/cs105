@@ -69,6 +69,3 @@ These two rules have recursive implications:
 ```
 app2 : (forall ['a 'b] (('a -> 'b) 'a 'a -> 'b))
 ```
-
-# Formal Foundation for Inference: The Hidley-Milner Type System
-
