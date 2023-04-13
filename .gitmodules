@@ -28,3 +28,6 @@
 [submodule "hw09"]
 	path = hw09
 	url = git@github.com:liam-strand/cs105-hw09.git
+[submodule "hw10"]
+	path = hw10
+	url = git@github.com:liam-strand/cs105-hw10.git
