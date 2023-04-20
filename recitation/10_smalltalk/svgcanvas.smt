@@ -24,6 +24,6 @@
     ('</svg> println))
 
   (method drawPolygon: (coord-list)  (self leftAsExercise))
-  (method drawEllipseAt:width:height: (center w h) (self leftAsExercise))
+  (method drawEllipseAt:width:height: (center w h))
 
 )
